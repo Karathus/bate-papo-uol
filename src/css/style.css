@@ -1,0 +1,174 @@
+body {
+    font-family: "Roboto";
+}
+
+header {
+    height: 80px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 22px;
+    box-shadow: 0px 4px 6px 0px #0000000D;
+    background-color: #FFFFFF;
+    font-size: 45px;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+header img {
+    height: 53px;
+}
+
+main {
+    height: calc(100vh - 160px);
+    width: 100vw;
+    padding: 10px 0;
+    margin: 80px 0;
+    background-color: #F3F3F3;
+    z-index: -1;
+    overflow-y: auto;
+}
+
+footer {
+    height: 80px;
+    width: 100vw;
+    background-color: #FFFFFF;
+    box-shadow: 0px -4px 6px 0px #0000000D;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: space-between;
+    padding: 18px 22px;
+    font-size: 26px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+
+footer ion-icon {
+    align-self: center;
+}
+
+footer div {
+    font-size: 14px;
+    line-height: 25px;
+    color: #505050;
+}
+
+::-webkit-input-placeholder {
+    color: black;
+    font-style: italic;
+}
+
+input {
+    font-size: 18px;
+    border: none;
+    outline-color: #505050;
+    padding: 3px;
+    width: 70vw;
+}
+
+.destinatario {
+    font-weight: 300;
+}
+
+.caixa-de-mensagem {
+    min-height: 40px;
+    display: flex;
+    align-items: center;
+    padding: 12px 8px;
+    font-size: 14px;
+    margin-bottom: 4px;
+    line-height: 20px;
+}
+
+.status {
+    background-color: #DCDCDC;
+}
+
+.mensagem {
+    background-color: #FFFFFF;
+}
+
+.mensagem-privada {
+    background-color: #FFDEDE;
+}
+
+.menu-lateral {
+    top: 0;
+    left: 0;
+    z-index: 1;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background: #00000099;
+}
+
+.fundo-menu {
+    left: 0;
+    top: 0;
+    position: fixed;
+    height: 100%;
+    width: calc(100vw - 259px);
+}
+
+.opcoes-menu {
+    position: fixed;
+    right: 0;
+    width: 259px;
+    height: 100vh;
+    background-color: white;
+}
+
+.opcoes-menu h2 {
+    margin: 34px 41px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.opcoes-menu div {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    padding: 6px 0;
+}
+
+.pessoa,
+.todos,
+.publico,
+.privado {
+    display: flex;
+    align-items: center;
+}
+
+.pessoas {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.opcoes-menu div ion-icon {
+    font-size: 25px;
+    padding: 0 17px;
+}
+
+.contato,
+.visibilidade,
+.escondido {
+    display: none;
+}
+
+.contato-selecionado .contato,
+.visibilidade-selecionada .visibilidade {
+    display: block;
+    position: fixed;
+    right: 0;
+    color: #28BB25;
+    height: 15px;
+    width: 17px;
+}
