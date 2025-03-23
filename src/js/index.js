@@ -114,7 +114,7 @@ function renderizarMensagens(resposta) {
         }
     })
     const novaMensagem = document.querySelector(".caixa-de-mensagem:last-child");
-    if (ultimaMensagem !== novaMensagem) {
+    if (ultimaMensagem.innerHTML !== novaMensagem.innerHTML) {
         novaMensagem.scrollIntoView();
     }
 }
